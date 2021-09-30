@@ -1,17 +1,356 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "./components";
- *   |         ^^^^^^^^^^^^^^
- *   '
- *   scss\index.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"./components\";\d\a   \2502          ^^^^^^^^^^^^^^\a   \2575 \a   scss\\index.scss 2:9  root stylesheet";
+.subitem {
+  width: 50%;
+  padding: 0 20px 30px;
 }
+
+.subitemwrapper {
+  width: 25%;
+  padding: 0 10px 20px;
+}
+
+.subitemblock3 {
+  background-color: brown;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0;
+}
+
+.dflex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__wrapper {
+  background-color: #f6f2f2;
+}
+
+header nav {
+  padding-top: 30px;
+}
+
+header nav ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  background-color: #313030;
+  justify-content: center;
+}
+
+header nav ul li {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+}
+
+header nav ul li a {
+  color: #e0e0e0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+header nav ul li:hover {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  background-color: #ff3f40;
+  transition: 1s;
+}
+
+.block1__wrapper {
+  background-color: #f6f2f2;
+}
+
+.block1__content {
+  padding: 100px 0 110px;
+}
+
+.block1__content div .block1__btn {
+  display: flex;
+  height: 56px;
+  align-content: center;
+  margin-top: 60px;
+}
+
+.block1__content div h1 {
+  text-transform: uppercase;
+  font-size: 64px;
+  margin: 0;
+  letter-spacing: 6px;
+  word-spacing: -7px;
+  line-height: 70px;
+}
+
+.block1__content div p {
+  width: 75%;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.block1__content div a {
+  border: 1px solid transparent;
+  padding: 15px 73px;
+  background-color: #ff2d2d;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.block1__item2 {
+  box-shadow: 1px -14px 73px 7px rgba(0, 0, 0, 0.29);
+  height: 360px;
+}
+
+.block2__wrapper {
+  padding-top: 110px;
+}
+
+.block2__content {
+  justify-content: space-between;
+  border-bottom: 2px solid #ececec;
+  padding-bottom: 80px;
+}
+
+.block2__item1 {
+  width: 40%;
+}
+
+.block2__item1 h2 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 42px;
+}
+
+.block2__item1 p {
+  margin: 50px 0 0;
+}
+
+.block2__content .block2__item1 .block2__btn {
+  display: flex;
+  height: 56px;
+  align-content: center;
+  margin-top: 60px;
+}
+
+.block2__item1 a {
+  border: 2px solid red;
+  padding: 15px 52px;
+  color: red;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.block2__item2 {
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.block3__wrapper {
+  padding-top: 110px;
+}
+
+.block3__h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 42px;
+}
+
+.block3__text {
+  text-align: center;
+  margin: 0 auto;
+  width: 510px;
+  padding-top: 30px;
+}
+
+.block3__text::after {
+  display: block;
+  content: "";
+  width: 130px;
+  border-bottom: 2px solid red;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.block3__menu {
+  padding: 80px 0 65px;
+}
+
+.block3__menu ul {
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.block3__menu ul li {
+  padding: 0 30px;
+}
+
+.block3__menu ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.block3__menu ul li a:hover {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  transition: 0.5s;
+}
+
+.block3__subitems {
+  height: 600px;
+  flex-wrap: wrap;
+}
+
+.block3__subitems div:first-child {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.block3__subitems div:nth-child(4) {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.block3__subitems div:nth-child(5) {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.block3__subitems div:last-child {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.block4__wrapper {
+  padding: 120px 0 110px 0;
+}
+
+.block4__h3 {
+  font-size: 48px;
+  text-transform: uppercase;
+  position: relative;
+  left: -10px;
+  margin: 0 0 40px;
+}
+
+.block4__text {
+  width: 450px;
+  margin: 0;
+}
+
+.block4__text::after {
+  display: block;
+  content: "";
+  width: 130px;
+  border-bottom: 2px solid red;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.block4__items {
+  margin-top: 70px;
+  justify-content: space-between;
+}
+
+.block4__item1 {
+  height: 460px;
+  width: 25%;
+  background-color: burlywood;
+}
+
+.block4__item2 {
+  width: 70%;
+}
+
+.block4__item2__subitem1 {
+  margin-top: 10px;
+}
+
+.block4__item2__subitem1__title {
+  text-transform: uppercase;
+  font-size: 26px;
+  margin: 0;
+}
+
+.block4__item2__subitem1__text {
+  width: 75%;
+  margin: 35px 0 45px;
+}
+
+.block4__item2__subitem1__links {
+  margin-bottom: 57px;
+}
+
+.block4__item2__subitem1__link {
+  padding-right: 30px;
+}
+
+.block4__item2__subitem1__link a {
+  font-style: oblique;
+  color: black;
+}
+
+.block4__item2__subitem2 {
+  height: 215px;
+}
+
+.block4__item2__sunitem2__child__wrapper {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.block4__item2__sunitem2__child {
+  height: 100%;
+  background-color: blue;
+  position: relative;
+}
+
+.block4__subitem__childhover {
+  color: transparent;
+}
+
+.block4__item2__sunitem2__child:hover .block4__subitem__childhover {
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
