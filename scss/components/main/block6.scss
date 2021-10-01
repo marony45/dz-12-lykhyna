@@ -1,5 +1,6 @@
 .block6__wrapper {
     padding-top: 100px;
+    height: 1000px;
 }
 
 .block6__content {
@@ -16,6 +17,7 @@
 .nocontainer {
     .block6__item1__wrapper {
         width: 720px;
+        margin: 0;
     } 
 }
 
@@ -31,8 +33,110 @@
     
 }
 
+.block6__text::after {
+    display: block;
+    content: '';
+    width: 130px;
+    border-bottom: 2px solid red;
+    margin: 0;
+    padding-top: 55px;
+}
+
+
 .block6__contactus__wrapper {
-    background-color: black;
-    color: blanchedalmond;
+    background-color: $block6cntcuswrpbgclr;
+    color: $block6cntcuswrpclr;
     width: auto;
 }
+
+.block6__inputs__wrapper {
+    padding: 75px 0 45px;
+    justify-content: space-between;
+}
+
+.block6__input__name {
+    border: none;
+    padding: 27px 85px;
+    border-radius: 5px;
+    background-color: $block6inputnameclr;
+}
+
+.block6__input__name::placeholder {
+    font-size: 18px;
+
+}
+
+.block6__input__email {
+    border: none;
+    padding: 27px 85px;
+    border-radius: 5px;
+    background-color: $block6inputemailclr;
+}
+
+.block6__input__email::placeholder {
+    font-size: 18px;
+
+}
+
+.block6__textarea__wrapper {
+    margin: 0 0 45px;
+}
+
+.block6__textarea {
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    background-color: $block6inputtxtarreabgclr;
+    color: $block6inputtxtarreaclr;
+}
+
+.block6__textarea::placeholder {
+    font-size: 18px;
+}
+
+.block6__btn {
+    padding: 30px 0;
+    width: 100%;
+    background-color: $block6btnbgclr;
+    color: $block6btnclr;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.block6__contactus__wrapper {
+    padding: 140px 0 145px 80px;
+    position: relative;
+    left: 1150px;
+    top: -505px;
+
+}
+
+.block6__contactus__h3 {
+    font-size: 22px;
+    color: $block6cntcusclr;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+}
+
+.block6__contactus__wrapper {
+    .address{
+        font-style: initial;
+        width: 280px;
+        color: $block6cntcuswrpprclr;
+    }
+}
+
+.block6__contactus__wrapper {
+    .email{
+        font-style: initial;
+       margin: 25px 0;
+       color: $block6cntcuswrppremailclr;
+    }
+}
+
+
+            .tel {
+                color: $block6cntcustelclr;
+            }

@@ -1,3 +1,82 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 .subitem {
   width: 50%;
   padding: 0 20px 30px;
@@ -9,7 +88,7 @@
 }
 
 .subitemblock3 {
-  background-color: brown;
+  background-color: #f5f0dd;
   width: 100%;
   height: 100%;
 }
@@ -281,7 +360,7 @@ header nav ul li:hover {
 .block4__item1 {
   height: 460px;
   width: 25%;
-  background-color: burlywood;
+  background-color: #f5f0dd;
 }
 
 .block4__item2 {
@@ -304,7 +383,7 @@ header nav ul li:hover {
 }
 
 .block4__item2__subitem1__links {
-  margin-bottom: 57px;
+  margin-bottom: 44px;
 }
 
 .block4__item2__subitem1__link {
@@ -320,6 +399,14 @@ header nav ul li:hover {
   height: 215px;
 }
 
+.block4__item2__subitem2 div:first-child {
+  padding-left: 0;
+}
+
+.block4__item2__subitem2 div:last-child {
+  padding-right: 0;
+}
+
 .block4__item2__sunitem2__child__wrapper {
   width: 100%;
   padding: 0 10px;
@@ -327,7 +414,7 @@ header nav ul li:hover {
 
 .block4__item2__sunitem2__child {
   height: 100%;
-  background-color: blue;
+  background-color: #f5f0dd;
   position: relative;
 }
 
@@ -350,7 +437,7 @@ header nav ul li:hover {
 }
 
 .block5__wrapper {
-  background-color: yellow;
+  background-color: #f5f0dd;
   padding: 140px 0;
 }
 
@@ -406,6 +493,7 @@ header nav ul li:hover {
 
 .block6__wrapper {
   padding-top: 100px;
+  height: 1000px;
 }
 
 .block6__content {
@@ -420,6 +508,7 @@ header nav ul li:hover {
 
 .nocontainer .block6__item1__wrapper {
   width: 720px;
+  margin: 0;
 }
 
 .block6__h3 {
@@ -433,10 +522,131 @@ header nav ul li:hover {
   margin: 50px 0 0;
 }
 
+.block6__text::after {
+  display: block;
+  content: "";
+  width: 130px;
+  border-bottom: 2px solid red;
+  margin: 0;
+  padding-top: 55px;
+}
+
 .block6__contactus__wrapper {
   background-color: black;
   color: blanchedalmond;
   width: auto;
+}
+
+.block6__inputs__wrapper {
+  padding: 75px 0 45px;
+  justify-content: space-between;
+}
+
+.block6__input__name {
+  border: none;
+  padding: 27px 85px;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+}
+
+.block6__input__name::placeholder {
+  font-size: 18px;
+}
+
+.block6__input__email {
+  border: none;
+  padding: 27px 85px;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+}
+
+.block6__input__email::placeholder {
+  font-size: 18px;
+}
+
+.block6__textarea__wrapper {
+  margin: 0 0 45px;
+}
+
+.block6__textarea {
+  resize: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  color: black;
+}
+
+.block6__textarea::placeholder {
+  font-size: 18px;
+}
+
+.block6__btn {
+  padding: 30px 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.block6__contactus__wrapper {
+  padding: 140px 0 145px 80px;
+  position: relative;
+  left: 1150px;
+  top: -505px;
+}
+
+.block6__contactus__h3 {
+  font-size: 22px;
+  color: #d5d5d5;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+}
+
+.block6__contactus__wrapper .address {
+  font-style: initial;
+  width: 280px;
+  color: #d5d5d5;
+}
+
+.block6__contactus__wrapper .email {
+  font-style: initial;
+  margin: 25px 0;
+  color: #d5d5d5;
+}
+
+.tel {
+  color: #d5d5d5;
+}
+
+.footer__wrapper {
+  height: 110px;
+  background-color: #313030;
+}
+
+.footer__wrapper .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.footer__text {
+  height: 100%;
+  align-items: center;
+  color: #b8b8b8;
+}
+
+.footer__logos {
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+
+.footer__logo {
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -10,15 +10,47 @@ $block1-contentbgc: #f6f2f2;
     padding:0 20px 30px;
 }
 
+$block2item1a: red;
+
 .subitemwrapper {
     width: 25%;
     padding:0 10px 20px;
 }
 
-
+$block3menuaclr: black;
+$block3menuaclrhover: red;
 
 .subitemblock3 {
-    background-color: brown;
+    background-color: #f5f0dd;
     width: 100%;
     height: 100%;
 }
+
+$block4item1bgclr: #f5f0dd;
+$block4item2linkclr: black;
+$block4sunitem2childclr: #f5f0dd;
+$block4item2sunitem2childhoverbgclr: rgba(0,0,0,.5);
+$block4item2sunitem2childhoverclr: whitesmoke;
+
+$block5wrpprbgclr: #f5f0dd;
+$block5h3clr: white;
+$block5txtclr: whitesmoke;
+$block5inputplcholdrclr: grey;
+$block5btnclr: whitesmoke;
+$block5btnbgclr: red;
+
+$block6cntcuswrpbgclr: black;
+$block6cntcuswrpclr: blanchedalmond;
+$block6inputnameclr: #e5e5e5;
+$block6inputemailclr: #e5e5e5;
+$block6inputtxtarreabgclr: #e5e5e5;
+$block6inputtxtarreaclr: black;
+$block6btnbgclr: red;
+$block6btnclr: white;
+$block6cntcusclr: #d5d5d5;
+$block6cntcuswrpprclr: #d5d5d5;
+$block6cntcuswrppremailclr: #d5d5d5;
+$block6cntcustelclr: #d5d5d5;
+
+$footerwrppr: #313030;
+$footertxtclr: #b8b8b8;

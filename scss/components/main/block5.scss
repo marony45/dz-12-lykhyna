@@ -1,16 +1,16 @@
 .block5__wrapper {
-    background-color: yellow;
+    background-color: $block5wrpprbgclr;
     padding: 140px 0;
 }
 
 .block5__h3 {
-    color:white;
+    color: $block5h3clr;
     font-size: 48px;
     margin: 0 auto;
     text-align: center;
 }
 .block5__text {
-    color: whitesmoke;
+    color: $block5txtclr;
     text-align: center;
     margin: 0 auto;
     padding: 35px 0 60px;
@@ -31,7 +31,7 @@
 }
 
 .block5__input::-webkit-input-placeholder {
-    color: grey;
+    color: $block5inputplcholdrclr;
     text-align: left;
     font-size: 20px;
     
@@ -43,8 +43,8 @@
 }
 
 .block5__btn {
-    color: whitesmoke;
-    background-color: red;
+    color: $block5btnclr;
+    background-color: $block5btnbgclr;
     border-radius: 5px;
     border: none;
     padding: 0 40px;

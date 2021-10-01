@@ -53,7 +53,7 @@
             text-transform: uppercase;
             font-weight: bold;
             font-size: 20px;
-            color: black;
+            color: $block3menuaclr;
            }
          }
        }
@@ -66,7 +66,7 @@
             text-transform: uppercase;
             font-weight: bold;
             font-size: 20px;
-            color: red;
+            color: $block3menuaclrhover;
             transition: .5s;
            }
          }

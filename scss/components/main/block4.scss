@@ -32,7 +32,7 @@
 .block4__item1 {
     height: 460px;
     width: 25%;
-    background-color: burlywood;
+    background-color: $block4item1bgclr
 }
 
 .block4__item2 {
@@ -55,7 +55,7 @@
 }
 
 .block4__item2__subitem1__links {
-    margin-bottom: 57px;
+    margin-bottom: 44px;
 }
 
 .block4__item2__subitem1__link {
@@ -65,14 +65,22 @@
 .block4__item2__subitem1__link {
     a{
         font-style: oblique;
-        color: black;
+        color: $block4item2linkclr;
     }
 }
 
 .block4__item2__subitem2 {
     height: 215px;
+
 }
 
+.block4__item2__subitem2 div:first-child {
+    padding-left: 0;
+}
+
+.block4__item2__subitem2 div:last-child {
+    padding-right: 0;
+}
 
 
 .block4__item2__sunitem2__child__wrapper {
@@ -82,7 +90,7 @@
 
 .block4__item2__sunitem2__child {
     height: 100%;
-    background-color: blue;
+    background-color: $block4sunitem2childclr;
     position: relative;
 }
 
@@ -92,8 +100,8 @@
 
 .block4__item2__sunitem2__child:hover .block4__subitem__childhover{
     height: 15%;
-    background-color: rgba(0,0,0,.5);
-    color:whitesmoke;
+    background-color: $block4item2sunitem2childhoverbgclr;
+    color:$block4item2sunitem2childhoverclr;
     text-align: center;
     text-transform: uppercase;
     display: flex;
